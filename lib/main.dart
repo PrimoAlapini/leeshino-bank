@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:leeshino_bank/views/page_2.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,9 @@ class MyApp extends StatelessWidget {
             appBar: AppBar(
               title: Text("LeeShino Bank"),
             ),
-            body: Center()));
+            body: Center(
+              child: TransfMoney(),
+            )));
   }
   
 }
