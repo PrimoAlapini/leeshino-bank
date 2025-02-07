@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:leeshino_bank/views/accueil.dart';
+import 'package:leeshino_bank/views/dashbord.dart';
+import 'package:leeshino_bank/views/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -36,11 +37,13 @@ class MyApp extends StatelessWidget {
             appBar: AppBar(
               title: Text("LeeShino Bank"),
             ),
-            body: Center(
+            body: SingleChildScrollView(
+              child: Center(
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child: HomePage(),
               ),
-            )));
+            )
+            ) ));
   }
 }
