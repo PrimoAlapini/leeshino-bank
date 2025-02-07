@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:leeshino_bank/views/page_2.dart';
+// import 'package:leeshino_bank/views/page_2.dart';
+import 'package:leeshino_bank/views/login.dart';
+// import 'package:leeshino_bank/views/modals/modal_choix.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,9 +19,18 @@ class MyApp extends StatelessWidget {
             appBar: AppBar(
               title: Text("LeeShino Bank"),
             ),
-            body: Center(
-              child: TransfMoney(),
-            )));
+            body: SingleChildScrollView(
+                child: Center(
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                child: LoginForm(),
+                // child: ElevatedButton(
+                //     onPressed: () {
+                //       choixAccount(context);
+                //     },
+                //     child: Text(data)
+                //     ),
+              ),
+            ))));
   }
-  
 }
