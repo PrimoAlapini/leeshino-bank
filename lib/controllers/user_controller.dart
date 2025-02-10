@@ -1,7 +1,6 @@
 import 'package:leeshino_bank/models/user_model.dart';
 import 'package:leeshino_bank/bdd/user_data.dart';
 
-
 class UserController {
   final List<UserModel> _users = [...users];
 
@@ -30,7 +29,16 @@ class UserController {
   }
 
   bool marchPassForUser(String nameOrEmail, String password) {
-      return _users.any((user) => (user.name == nameOrEmail || user.email == nameOrEmail) && user.password == password);
-    
+    return _users.any((user) =>
+        (user.name == nameOrEmail || user.email == nameOrEmail) &&
+        user.password == password);
+  }
+
+  void updateBalance(int accountNumber, double montant) {
+    for (var element in users) {
+      if (element.accountNumber == accountNumber) {
+        element.balance += montant;
+      }
+    }
   }
 }

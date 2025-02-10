@@ -9,14 +9,14 @@ class TransfMoney extends StatefulWidget {
 
 class TransformState extends State<TransfMoney> {
   void click() {
-    setState(() {
-      
-    });
+    setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child:  Column(
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -25,12 +25,13 @@ class TransformState extends State<TransfMoney> {
             const Icon(Icons.arrow_back_ios),
             Text(
               "Transfert Money",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
             ),
             const Icon(Icons.search)
           ],
         ),
         SizedBox(height: 50),
+        
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -39,12 +40,12 @@ class TransformState extends State<TransfMoney> {
                 ClipOval(
                     child: Image.asset(
                   "assets/images/gojo.jpeg",
-                  width: 80,
-                  height: 80,
+                  width: 60,
+                  height: 60,
                   fit: BoxFit.cover,
                 )),
-                Text("Soujirou"),
-                Text("SouleTranchant"),
+                Text("Soujirou",style: TextStyle(fontSize: 20)),
+                Text("SouleTranchant", style: TextStyle(fontSize: 20)),
                 Container(
                   margin: EdgeInsets.only(top: 10),
                   width: 100,
@@ -57,18 +58,18 @@ class TransformState extends State<TransfMoney> {
                 )
               ],
             ),
-            SizedBox(width: 35),
+            SizedBox(width: 20),
             Column(
               children: [
                 ClipOval(
                     child: Image.asset(
                   "assets/images/gojo.jpg",
-                  width: 80,
-                  height: 80,
+                  width: 60,
+                  height: 60,
                   fit: BoxFit.cover,
                 )),
-                Text("Gojo", style: TextStyle(fontWeight: FontWeight.bold)),
-                Text("Satoru", style: TextStyle(fontWeight: FontWeight.bold)),
+                Text("Gojo", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+                Text("Satoru", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
                 Container(
                   margin: EdgeInsets.only(top: 10),
                   width: 100,
@@ -81,18 +82,18 @@ class TransformState extends State<TransfMoney> {
                 )
               ],
             ),
-            SizedBox(width: 35),
+            SizedBox(width: 20),
             Column(
               children: [
                 ClipOval(
                     child: Image.asset(
                   "assets/images/gojo-satoru-jjk-saison-1.png",
-                  width: 80,
-                  height: 80,
+                  width: 60,
+                  height: 60,
                   fit: BoxFit.cover,
                 )),
-                Text("Naruto"),
-                Text("Uzumaki"),
+                Text("Naruto", style: TextStyle(fontSize: 20)),
+                Text("Uzumaki", style: TextStyle(fontSize: 20)),
                 Container(
                   margin: EdgeInsets.only(top: 10),
                   width: 100,
@@ -105,18 +106,18 @@ class TransformState extends State<TransfMoney> {
                 )
               ],
             ),
-            SizedBox(width: 35),
+            SizedBox(width: 20),
             Column(
               children: [
                 ClipOval(
                     child: Image.asset(
                   "assets/images/jujutsu-kaisen-theme-ih12.jpg.",
-                  width: 80,
-                  height: 80,
+                  width: 60,
+                  height: 60,
                   fit: BoxFit.cover,
                 )),
-                Text("Shinra"),
-                Text("Kusakabe"),
+                Text("Shinra", style: TextStyle(fontSize: 20)),
+                Text("Kusakabe", style: TextStyle(fontSize: 20)),
                 Container(
                   margin: EdgeInsets.only(top: 10),
                   width: 100,
@@ -131,7 +132,7 @@ class TransformState extends State<TransfMoney> {
             ),
           ],
         ),
-        SizedBox(height: 30),
+        SizedBox(height: 20),
         Column(
           children: [
             SizedBox(height: 75),
@@ -141,23 +142,23 @@ class TransformState extends State<TransfMoney> {
                 Text(
                   "\$5|",
                   style: TextStyle(
-                    fontSize: 55.0,
+                    fontSize: 30.0,
                     color: const Color.fromARGB(255, 45, 49, 41),
                   ),
                 ),
                 Text(
                   ".00",
-                  style: TextStyle(fontSize: 64.0, color: Colors.grey),
+                  style: TextStyle(fontSize: 30.0, color: Colors.grey),
                 )
               ],
             ),
-            SizedBox(height: 85),
+            SizedBox(height: 55),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   padding: EdgeInsets.all(8.0),
-                  width: 55,
+                  width: 50,
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(
                         255, 233, 236, 230), // Couleur de l'arrière-plan
@@ -167,13 +168,13 @@ class TransformState extends State<TransfMoney> {
                   child: Text(
                     "\$5",
                     style: TextStyle(
-                      fontSize: 18.0,
+                      fontSize: 14.0,
                       color: const Color.fromARGB(
                           255, 45, 49, 41), // Couleur du texte
                     ),
                   ),
                 ),
-                SizedBox(width: 25),
+                SizedBox(width: 15),
                 Container(
                   padding: EdgeInsets.all(8.0),
                   width: 55,
@@ -186,16 +187,16 @@ class TransformState extends State<TransfMoney> {
                   child: Text(
                     "\$10",
                     style: TextStyle(
-                      fontSize: 18.0,
+                      fontSize: 14.0,
                       color: const Color.fromARGB(
                           255, 45, 49, 41), // Couleur du texte
                     ),
                   ),
                 ),
-                SizedBox(width: 25),
+                SizedBox(width: 15),
                 Container(
                   padding: EdgeInsets.all(8.0),
-                  width: 55,
+                  width: 50,
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(
                         255, 233, 236, 230), // Couleur de l'arrière-plan
@@ -205,16 +206,16 @@ class TransformState extends State<TransfMoney> {
                   child: Text(
                     "\$20",
                     style: TextStyle(
-                      fontSize: 18.0,
+                      fontSize: 14.0,
                       color: const Color.fromARGB(
                           255, 45, 49, 41), // Couleur du texte
                     ),
                   ),
                 ),
-                SizedBox(width: 25),
+                SizedBox(width: 15),
                 Container(
                   padding: EdgeInsets.all(8.0),
-                  width: 55,
+                  width: 50,
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(
                         255, 233, 236, 230), // Couleur de l'arrière-plan
@@ -224,16 +225,16 @@ class TransformState extends State<TransfMoney> {
                   child: Text(
                     "\$50",
                     style: TextStyle(
-                      fontSize: 18.0,
+                      fontSize: 14.0,
                       color: const Color.fromARGB(
                           255, 45, 49, 41), // Couleur du texte
                     ),
                   ),
                 ),
-                SizedBox(width: 25),
+                SizedBox(width: 15),
                 Container(
                   padding: EdgeInsets.all(8.0),
-                  width: 65,
+                  width: 50,
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(
                         255, 233, 236, 230), // Couleur de l'arrière-plan
@@ -243,7 +244,7 @@ class TransformState extends State<TransfMoney> {
                   child: Text(
                     "\$100",
                     style: TextStyle(
-                      fontSize: 18.0,
+                      fontSize: 14.0,
                       color: const Color.fromARGB(
                           255, 45, 49, 41), // Couleur du texte
                     ),
@@ -263,22 +264,22 @@ class TransformState extends State<TransfMoney> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(height: 50),
+                SizedBox(height: 30),
                 Text("\1",
                     style: TextStyle(
-                      fontSize: 21.0,
+                      fontSize: 18,
                       color: const Color.fromARGB(255, 45, 49, 41),
                     )),
-                SizedBox(width: 50),
+                SizedBox(width: 30),
                 Text("\2",
                     style: TextStyle(
-                      fontSize: 21.0,
+                      fontSize: 18,
                       color: const Color.fromARGB(255, 45, 49, 41),
                     )),
-                SizedBox(width: 50),
+                SizedBox(width: 30),
                 Text("\3",
                     style: TextStyle(
-                      fontSize: 21.0,
+                      fontSize: 18,
                       color: const Color.fromARGB(255, 45, 49, 41),
                     )),
                     SizedBox(width: 30),
@@ -287,22 +288,22 @@ class TransformState extends State<TransfMoney> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                SizedBox(height: 50),
+                SizedBox(height: 30),
                 Text("\4",
                     style: TextStyle(
-                      fontSize: 21.0,
+                      fontSize: 18,
                       color: const Color.fromARGB(255, 45, 49, 41),
                     )),
-                SizedBox(width: 50),
+                SizedBox(width: 30),
                 Text("\5",
                     style: TextStyle(
-                      fontSize: 21.0,
+                      fontSize: 18,
                       color: const Color.fromARGB(255, 45, 49, 41),
                     )),
-                SizedBox(width: 50),
+                SizedBox(width: 30),
                 Text("\6",
                     style: TextStyle(
-                      fontSize: 21.0,
+                      fontSize: 18,
                       color: const Color.fromARGB(255, 45, 49, 41),
                     )),
                     SizedBox(width: 30),
@@ -311,22 +312,22 @@ class TransformState extends State<TransfMoney> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                SizedBox(height: 50),
+                SizedBox(height: 30),
                 Text("\7",
                     style: TextStyle(
-                      fontSize: 21.0,
+                      fontSize: 18,
                       color: const Color.fromARGB(255, 45, 49, 41),
                     )),
-                SizedBox(width: 50),
+                SizedBox(width: 30),
                 Text("\8",
                     style: TextStyle(
-                      fontSize: 21.0,
+                      fontSize: 18,
                       color: const Color.fromARGB(255, 45, 49, 41),
                     )),
-                SizedBox(width: 50),
+                SizedBox(width: 30),
                 Text("\9",
                     style: TextStyle(
-                      fontSize: 21.0,
+                      fontSize: 18,
                       color: const Color.fromARGB(255, 45, 49, 41),
                     )),
                     SizedBox(width: 30),
@@ -335,22 +336,22 @@ class TransformState extends State<TransfMoney> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                SizedBox(height: 50),
+                SizedBox(height: 30),
                 Text(".",
                     style: TextStyle(
-                      fontSize: 21.0,
+                      fontSize: 18,
                       color: const Color.fromARGB(255, 45, 49, 41),
                     )),
-                SizedBox(width: 50),
+                SizedBox(width: 30),
                 Text("0",
                     style: TextStyle(
-                      fontSize: 21.0,
+                      fontSize: 18,
                       color: const Color.fromARGB(255, 45, 49, 41),
                     )),
-                SizedBox(width: 50),
+                SizedBox(width: 30),
                 Text("=",
                     style: TextStyle(
-                      fontSize: 21.0,
+                      fontSize: 18,
                       color: const Color.fromARGB(255, 45, 49, 41),
                     )),
                     SizedBox(width: 30),
@@ -360,7 +361,7 @@ class TransformState extends State<TransfMoney> {
         ),
         SizedBox(height: 25),
         SizedBox(
-          width: 2000,
+          width: 000,
           height: 115,
           child: ElevatedButton(
           onPressed: click,
@@ -376,7 +377,7 @@ class TransformState extends State<TransfMoney> {
             child: Text(
               "SEND \$5.00  >",
               style: TextStyle(
-                fontSize: 18.0,
+                fontSize: 14.0,
                 color: const Color.fromARGB(
                     255, 189, 190, 187), // Couleur du texte
               ),
@@ -384,6 +385,7 @@ class TransformState extends State<TransfMoney> {
         ),
         )
       ],
+    ),
     );
   }
 }

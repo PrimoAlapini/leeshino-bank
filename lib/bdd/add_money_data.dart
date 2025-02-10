@@ -1,5 +1,3 @@
-
-
 import 'package:leeshino_bank/models/add_money_model.dart';
 
 List<AddMoney> transactions = [

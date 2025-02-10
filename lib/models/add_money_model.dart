@@ -7,4 +7,5 @@ class AddMoney {
   AddMoney(this._id, {required this.montant, required this.account});
 
   int get id => _id;
+  
 }

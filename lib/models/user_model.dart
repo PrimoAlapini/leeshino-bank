@@ -12,9 +12,10 @@ class UserModel {
     required this.name,
     required this.email,
     required this.password,
-    required this.accountNumber,
+     required this.accountNumber,
     this.balance = 0.00
   });
 
   int get id => _id;
+  int get account => accountNumber;
 }
