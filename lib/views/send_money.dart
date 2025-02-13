@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:leeshino_bank/controllers/transfer_money.controller.dart';
+import 'package:leeshino_bank/controllers/transfer_money_controller.dart';
 
 class TransfMoney extends StatefulWidget {
   const TransfMoney({super.key});

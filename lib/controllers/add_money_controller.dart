@@ -5,10 +5,9 @@ import 'package:leeshino_bank/models/add_money_model.dart';
 import 'package:leeshino_bank/models/user_model.dart';
 
 class AddMoneyController {
-  final List<UserModel> _users = [...users]; // Liste des utilisateurs
+  final List<UserModel> _users = [...users]; 
   final List<AddMoney> _transactions = [...transactions];
-  final UserController _userController =
-      UserController(); // Liste des transactions
+  final UserController _userController = UserController(); 
 
   int tranId = 0;
 
